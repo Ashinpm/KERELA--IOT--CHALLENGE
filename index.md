@@ -79,7 +79,7 @@ make sure code is uploaded without any error to the board.if any error encountre
 
 
 
-# experiment 2
+# Experiment 2
 ## Traffic Light
 
 ### Components Required  🗒️
@@ -150,7 +150,7 @@ digitalWrite(redled, LOW);// turn off red LED
 }
 
 ```
-## Output
+### Output
 
 > In Traffic light, the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. 
 
@@ -168,12 +168,12 @@ digitalWrite(redled, LOW);// turn off red LED
 * Breadboard 
 * wires
 
-## Circuit Diagram
+### Circuit Diagram
 
 ![circuit diagram](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
 
 
-## Code
+### Code
 
 ```
 int BASE = 2;  // the I/O pin for the first LED
