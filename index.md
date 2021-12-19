@@ -98,7 +98,7 @@ make sure code is uploaded without any error to the board.if any error encountre
 
 ![circuit diagram](https://user-images.githubusercontent.com/91405741/137288387-e85f8db9-ae97-49d0-888d-a2fc15e4c496.png)
 
-## Code
+### Program Code 💻
 
 ```
 int redled =10; // initialize digital pin 8.
