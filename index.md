@@ -29,7 +29,7 @@ orgin - ITALY
 
 
 # Experiment 1 
-## LED Blinking
+# LED Blinking
 
 
 ### Components Required  🗒️
@@ -84,7 +84,7 @@ make sure code is uploaded without any error to the board.if any error encountre
 
 
 # Experiment 2
-## Traffic Light
+# Traffic Light
 
 ### Components Required  🗒️
 * Arduino board 
@@ -161,7 +161,7 @@ digitalWrite(redled, LOW);// turn off red LED
 
 
 # Experiment 3
-## LED Chasing Effect 
+# LED Chasing Effect 
 
 
 ### Components Required  🗒️
