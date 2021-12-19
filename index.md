@@ -154,3 +154,73 @@ digitalWrite(redled, LOW);// turn off red LED
 
 > In Traffic light, the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. 
 
+
+
+# Experiment 3
+## LED Chasing Effect 
+
+
+### Components Required
+
+* Led x6
+* Arduino board 
+* 220Ω resistor x6
+* Breadboard 
+* wires
+
+## Circuit Diagram
+
+![circuit diagram](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
+
+
+## Code
+
+```
+int BASE = 2;  // the I/O pin for the first LED
+
+int NUM = 6;   // number of LEDs
+
+void setup()
+
+{
+
+   for (int i = BASE; i < BASE + NUM; i++) 
+   
+   {
+   
+     pinMode(i, OUTPUT);   // set I/O pins as output
+     
+   }
+   
+}
+
+void loop()
+
+{
+
+   for (int i = BASE; i < BASE + NUM; i++) 
+   
+   {
+   
+     digitalWrite(i, LOW);    // set I/O pins as “low”, turn off LEDs one by one.
+     
+     delay(200);        // delay
+     
+   }
+   
+   for (int i = BASE; i < BASE + NUM; i++) 
+   
+   {
+   
+     digitalWrite(i, HIGH);    // set I/O pins as “high”, turn on LEDs one by one
+     
+     delay(200);        // delay
+     
+   }  
+   
+}
+
+```
+
+### Output
+>The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
