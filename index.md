@@ -68,7 +68,7 @@ delay(1000); // wait for a second
 
 }
 ```
-### Output
+### Output 📝
 the led will blink with delay of 1 second  
 
 congragulation on your first project 😺
@@ -150,7 +150,7 @@ digitalWrite(redled, LOW);// turn off red LED
 }
 
 ```
-### Output
+### Output 📝
 
 > In Traffic light, the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. 
 
@@ -160,7 +160,7 @@ digitalWrite(redled, LOW);// turn off red LED
 ## LED Chasing Effect 
 
 
-### Components Required
+### Components Required  🗒️
 
 * Led x6
 * Arduino board 
@@ -168,12 +168,12 @@ digitalWrite(redled, LOW);// turn off red LED
 * Breadboard 
 * wires
 
-### Circuit Diagram
+### Circuit Diagram 🧭
 
 ![circuit diagram](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
 
 
-### Code
+### Program Code 💻
 
 ```
 int BASE = 2;  // the I/O pin for the first LED
@@ -222,5 +222,5 @@ void loop()
 
 ```
 
-### Output
+### Output 📝
 >The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
