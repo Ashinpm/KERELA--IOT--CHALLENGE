@@ -27,7 +27,8 @@ orgin - ITALY
 # Experiment 1 
 ## LED Blinking
 
-### Components Required  
+
+### Components Required  🗒️
 * Arduino Uno Board 
 * USB Cable 
 * LED
@@ -35,21 +36,42 @@ orgin - ITALY
 * Breadboard 
 * Jumper Wires
 
-### Circut Connection
+
+### Circut Connection 🧭
 ![circuit diagram](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
 
-### Program Code
 
 
-int ledPin = 10; // define digital pin 10.
+### Program Code 💻
+int ledPin = 10; // define digital pin 10
+
 void setup()
+
 {
-pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+
+pinMode(ledPin, OUTPUT); // LED connected as output
+
 }
+
 void loop()
+
 {
-digitalWrite(ledPin, HIGH); // set the LED on.
-delay(1000); // wait for a second.
-digitalWrite(ledPin, LOW); // set the LED off.
+
+digitalWrite(ledPin, HIGH); // LED on
+
 delay(1000); // wait for a second
+
+digitalWrite(ledPin, LOW); // LED off
+
+delay(1000); // wait for a second
+
 }
+
+
+### Output
+the led will blink with delay of 1 second  
+
+congragulation on your first project 😺
+
+### Things to note
+make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂
