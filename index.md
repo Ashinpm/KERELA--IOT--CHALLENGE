@@ -329,6 +329,93 @@ digitalWrite(buzzer, HIGH); // produce sound
 interfaced buzzer with Arduino
 
 
+# Experiment 6
+# RGB LED & Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno
+* USB Cable 
+* RGB LED 
+* Resistor 220 ohm
+* jumper wire
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146744513-1f2a5c9e-800d-41d5-863b-f07b9a1adaed.png)
+
+### About RGB
+RGB can emit any colour by mixing the 3 basic colours RED GREEN and BLUE. actually it consist of 3 seperate leds for red blue and green packed together in a single case.connect the resistors to the R,G,B terminals respectively
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146745799-fefb9ca2-05f0-4518-8fd7-a5ae4be4de90.png)
+
+### Program Code 💻
+```
+int redpin = 11; //select the pin for the red LED
+
+int bluepin =10; // select the pin for the blue LED
+
+int greenpin =9;// select the pin for the green LED
+
+int val;
+
+void setup() {
+
+  pinMode(redpin, OUTPUT);
+  
+  pinMode(bluepin, OUTPUT);
+  
+  pinMode(greenpin, OUTPUT);
+  
+  Serial.begin(9600);
+  
+}
+
+void loop() 
+
+{
+
+for(val=255; val>0; val--)
+
+  {
+  
+   analogWrite(11, val);
+   
+   analogWrite(10, 255-val);
+   
+   analogWrite(9, 128-val);
+   
+   delay(1); 
+   
+  }
+  
+for(val=0; val<255; val++)
+
+  {
+  
+   analogWrite(11, val);
+   
+   analogWrite(10, 255-val);
+   
+   analogWrite(9, 128-val);
+   
+   delay(1); 
+   
+  }
+  
+ Serial.println(val, DEC);
+ 
+}
+
+```
+
+### Output 📝
+interfaced RGB with Arduino
+
+
+
+
+
 
 
 
