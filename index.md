@@ -413,6 +413,32 @@ for(val=0; val<255; val++)
 interfaced RGB with Arduino
 
 
+# Experiment 7
+# LDR Light Sensor & Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno
+* 220Ω Resistor*1
+* 10KΩ Resistor*1
+* Photo Resistor (LDR Sensor)
+* jumper wire
+* Red M5 LED
+
+### Circuit Diagram 🧭
+
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146747611-f68854d3-308f-4a32-a54e-189b3958d75d.png)
+
+### About LDR Light Sensor
+Photo Resistor (Photovaristor) is a resistor whose resistance varies from different incident light strength. It's based on the photoelectric effect of semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146747626-da15340f-e361-49f3-baab-0ff439118d7f.png)
+
+
+
+
+
 
 
 
