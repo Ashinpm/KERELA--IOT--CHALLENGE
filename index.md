@@ -73,13 +73,13 @@ delay(1000); // wait for a second
 }
 ```
 ### Output 📝
-the led will blink with delay of 1 second  
+> the led will blink with delay of 1 second  
 
 congragulation on your first project 😺
 
 ### Things to note
 make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂
-
+### for reference
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -229,7 +229,7 @@ void loop()
 ```
 
 ### Output 📝
->The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
+> The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
 
 
 # Experiment 4
@@ -285,7 +285,7 @@ else
 ```
 
 ### Output 📝
-LED was Controlled by the switch. 
+> LED was Controlled by the switch. 
 
 
 # Experiment 5
@@ -326,7 +326,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 ```
 
 ### Output 📝
-interfaced buzzer with Arduino
+> interfaced buzzer with Arduino
 
 
 # Experiment 6
@@ -410,7 +410,7 @@ for(val=0; val<255; val++)
 ```
 
 ### Output 📝
-interfaced RGB with Arduino
+> interfaced RGB with Arduino
 
 
 # Experiment 7
@@ -472,7 +472,7 @@ delay(10);// wait for 0.01
 ### Output 📝
 ![output](https://user-images.githubusercontent.com/95163711/146748282-d95608d3-1aca-4e8a-80cf-a2952173af66.png)
 
-interfaced LDR with Arduino.
+> interfaced LDR with Arduino.
 
 
 
