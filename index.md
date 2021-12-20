@@ -472,7 +472,7 @@ delay(10);// wait for 0.01
 ### Output 📝
 ![output](https://user-images.githubusercontent.com/95163711/146748282-d95608d3-1aca-4e8a-80cf-a2952173af66.png)
 
-interfaced RGB with Arduino
+interfaced LDR with Arduino.
 
 
 
