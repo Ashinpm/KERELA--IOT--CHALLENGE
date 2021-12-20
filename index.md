@@ -1,19 +1,19 @@
-# KERALA-IOT-CHALLENGE [2021-22]
+# *KERALA-IOT-CHALLENGE [2021-22]*
 
 
 
-# HELLO ...✋ 
+# *HELLO ...✋* 
 
 ## About Me
 ...............................
 
 ### Name 🧑‍🦰    : ASHIN PM
 ### Status 😈  : B.Tech ECE 3rd year student
-### College 🏗️ : IES chittilapilly Thrissur
+### College 🏗️ : IES chittilappilly Thrissur
 ### From 🚞    : Thrissur , Thalikulam
 .........................................................................................................
 
-# KERALA-IOT-CHALLENGE-[2021-22]
+# *KERALA-IOT-CHALLENGE-[2021-22]*
 .........................................................................................................................................................
 # INTRODUCTION
 .....................................................................
@@ -230,3 +230,71 @@ void loop()
 
 ### Output 📝
 >The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
+
+
+# Experiment 4
+# Button Controlled LED
+
+### Components Required  🗒️
+
+* Arduino Uno
+* Button switch
+* Red M5 LED
+* 220ΩResistor
+* 10KΩ Resistor
+* Breadboard
+* Jumper Wire
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146739094-1b20ee7b-072f-47ce-9f9a-dbca058b613f.png)
+
+### Program Code 💻
+```
+int ledpin=11;// initialize pin 11
+
+int inpin=7;// initialize pin 7
+
+int val;// define val
+
+void setup()
+
+{
+
+pinMode(ledpin,OUTPUT);// set LED pin as “output”
+
+pinMode(inpin,INPUT);// set button pin as “input”
+
+}
+
+void loop()
+
+{
+
+val=digitalRead(inpin);// read the level value of pin 7 and assign if to val
+
+if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+
+{ digitalWrite(ledpin,LOW);}
+
+else
+
+{ digitalWrite(ledpin,HIGH);}
+
+}
+```
+
+### Output 📝
+LED was Controlled by the switch. 
+
+
+
+
+
+
+
+
+
+
+
+
