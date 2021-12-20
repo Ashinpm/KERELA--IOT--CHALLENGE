@@ -288,6 +288,52 @@ else
 LED was Controlled by the switch. 
 
 
+# Experiment 5
+# Buzzer & Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno
+* Buzzer
+* Breadboard
+* Jumper Wire
+
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146742939-32ba93e5-6980-438b-a892-2784fb76fd42.png)
+
+### Program Code 💻
+```
+int buzzer=8;// initialize digital IO pin that controls the buzzer
+
+void setup() 
+
+{ 
+
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”
+  
+} 
+
+void loop() 
+
+{
+
+digitalWrite(buzzer, HIGH); // produce sound
+
+}
+
+```
+
+### Output 📝
+interfaced buzzer with Arduino
+
+
+
+
+
+
+
 
 
 
