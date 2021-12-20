@@ -80,7 +80,7 @@ congragulation on your first project 😺
 ### Things to note
 make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Experiment 2
