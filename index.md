@@ -47,7 +47,7 @@ click [here](https://www.arduino.cc/en/Guide/Introduction)
 
 
 ### Program Code 💻
-```
+```ino
 int ledPin = 10; // define digital pin 10
 
 void setup()
@@ -100,7 +100,7 @@ make sure code is uploaded without any error to the board.if any error encountre
 
 ### Program Code 💻
 
-```
+```ino
 int redled =10; // initialize digital pin 8.
 
 int yellowled =7; // initialize digital pin 7.
@@ -181,7 +181,7 @@ digitalWrite(redled, LOW);// turn off red LED
 
 ### Program Code 💻
 
-```
+```ino
 int BASE = 2;  // the I/O pin for the first LED
 
 int NUM = 6;   // number of LEDs
@@ -250,7 +250,7 @@ void loop()
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146739094-1b20ee7b-072f-47ce-9f9a-dbca058b613f.png)
 
 ### Program Code 💻
-```
+```ino
 int ledpin=11;// initialize pin 11
 
 int inpin=7;// initialize pin 7
@@ -304,7 +304,7 @@ LED was Controlled by the switch.
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146742939-32ba93e5-6980-438b-a892-2784fb76fd42.png)
 
 ### Program Code 💻
-```
+```ino
 int buzzer=8;// initialize digital IO pin that controls the buzzer
 
 void setup() 
@@ -350,7 +350,7 @@ RGB can emit any colour by mixing the 3 basic colours RED GREEN and BLUE. actual
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146745799-fefb9ca2-05f0-4518-8fd7-a5ae4be4de90.png)
 
 ### Program Code 💻
-```
+```ino
 int redpin = 11; //select the pin for the red LED
 
 int bluepin =10; // select the pin for the blue LED
@@ -436,7 +436,7 @@ Photo Resistor (Photovaristor) is a resistor whose resistance varies from differ
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146747626-da15340f-e361-49f3-baab-0ff439118d7f.png)
 
 ### Program Code 💻
-```
+```ino
 int potpin=0;// initialize analog pin 0, connected with photovaristor
 
 int ledpin=11;// initialize digital pin 11, 
