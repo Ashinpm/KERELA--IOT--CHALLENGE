@@ -1034,8 +1034,6 @@ delay(1000); // wait for 1s
 
 ![output](https://user-images.githubusercontent.com/95163711/146967460-aeb435a0-1433-4ab2-b631-5f6479d1f26b.png)
 
-Watch This YouTube Video for More Clarification
-
 
 
 
