@@ -552,6 +552,73 @@ void loop()
 
 > Flame detector will detect the presence of fire and triggers the buzzer.
 
+# Experiment 9
+# Thermometer 
+
+### Components Required  🗒️
+
+* Arduino Uno  Board
+* LM35 Temprature sensor
+* Breadboard
+* Breadboard Jumper Wire
+
+### Circuit Diagram 🧭
+
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146960026-4b6e00b3-3130-42ba-bd11-d183ecd27a1b.png)
+
+### About LM35 sensor
+LM35 is a common and easy-to-use temperature sensor.LM35 is a widely used temperature sensor with many different package types. At room temperature, it can achieve the accuracy of ±1/4°C without additional calibration processing.LM35 temperature sensor can produce different voltage by different temperatureWhen temperature is 0 ℃, it outputs 0V; if increasing 1 ℃, the output voltage will increase 10 mv.
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146959998-c3ae6922-4aaa-4bab-96c3-4f4a5afe4cb9.png)
+
+### Program Code 💻
+```ino
+int potPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+
+void setup()
+
+{
+
+Serial.begin(9600);// set baud rate at”9600”
+
+}
+
+void loop()
+
+{
+
+int val;// define variable
+
+int dat;// define variable
+
+val=analogRead(0);// read the analog value of the sensor and assign it to val
+
+dat=(125*val)>>8;// temperature calculation formula
+
+Serial.print("Tep");// output and display characters beginning with Tep
+
+Serial.print(dat);// output and display value of dat
+
+Serial.println("C");// display “C” characters
+
+delay(500);// wait for 0.5 second
+
+}
+
+```
+
+### Output 📝
+![output](https://user-images.githubusercontent.com/95163711/146960047-ac269a42-a60c-4406-bd83-23e119526183.png)
+
+### *NOTE* 
+Press Clr + Shift + M in Arduino Software or got to TOOLS then Click on SERIAL MONITOR to see the output.
+
+> We can see te room temprature on serial monitor
+
+
+
+
 
 
 
