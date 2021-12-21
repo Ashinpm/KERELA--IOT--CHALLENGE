@@ -644,7 +644,7 @@ Press Clr + Shift + M in Arduino Software or go to TOOLS then Click on SERIAL MO
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146963454-fd8504f1-ae3c-4faf-9e4c-91eea5136560.png)
 
-### About LM35 sensor
+### About TSOP - IR Receiver Module
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146963415-9df4cb29-ebae-4c08-8c3e-add595939c0f.png)
 
@@ -800,6 +800,68 @@ Watch This YouTube Video for More Clarification
 
 
 
+# Experiment 11
+# Potentiometer analog Value Reading Using Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno  Board
+* 10K Potentiometer
+* Jumper Wire
+* Breadboard
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146965618-427ccc13-f13c-4249-8faf-bae2905f0967.png)
+
+### About Potentiometer
+Potentiometer = Variable Resistor. A potentiometer is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146965609-510eac8a-b0df-4893-a8b9-5ce89abdb7f1.png)
+
+### Program Code 💻
+```ino
+int potpin=0;// initialize analog pin 0
+
+int ledpin=13;// initialize digital pin 13
+
+int val=0;// define val, assign initial value 0
+
+void setup()
+
+{
+
+pinMode(ledpin,OUTPUT);// set digital pin as “output”
+
+Serial.begin(9600);// set baud rate at 9600
+
+}
+
+void loop()
+
+{
+
+digitalWrite(ledpin,HIGH);// turn on the LED on pin 13
+
+delay(50);// wait for 0.05 second
+
+digitalWrite(ledpin,LOW);// turn off the LED on pin 13
+
+delay(50);// wait for 0.05 second
+
+val=analogRead(potpin);// read the analog value of analog pin 0, and assign it to val
+
+Serial.println(val);// display val’s value
+
+}
+```
+### Output 📝
+
+![output](https://user-images.githubusercontent.com/95163711/146965628-ef8d5c4c-e5e9-4efa-bcba-6651438c78d0.png)
+
+Watch This YouTube Video for More Clarification
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t9DEAreCD3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
