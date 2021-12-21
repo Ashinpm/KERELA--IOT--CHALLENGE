@@ -288,6 +288,8 @@ else
 ### Output 📝
 > LED was Controlled by the switch. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yqesLSTzf6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # Experiment 5
 # Buzzer & Arduino
