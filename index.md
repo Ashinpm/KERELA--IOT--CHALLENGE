@@ -80,7 +80,7 @@ delay(1000); // wait for a second
 congragulation on your first project 😺
 
 ### Things to note
-make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂 watch the youtube video below to clear all doubts
+make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂 Watch This YouTube Video for More Clarification
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -288,6 +288,7 @@ else
 ### Output 📝
 > LED was Controlled by the switch. 
 
+Watch This YouTube Video for More Clarification
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqesLSTzf6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -476,6 +477,8 @@ delay(10);// wait for 0.01
 ![output](https://user-images.githubusercontent.com/95163711/146748282-d95608d3-1aca-4e8a-80cf-a2952173af66.png)
 
 > interfaced LDR with Arduino.
+
+Watch This YouTube Video for More Clarification
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xIha-fq0PT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
