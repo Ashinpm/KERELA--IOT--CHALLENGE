@@ -21,7 +21,7 @@
 ## LET'S BEGIN
 
 
-### What is ARDUINO 
+## What is ARDUINO 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146955215-f7cddde3-1601-4d06-ac1d-51dbb45e1f62.png)
 
 Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices
@@ -568,9 +568,10 @@ void loop()
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146960026-4b6e00b3-3130-42ba-bd11-d183ecd27a1b.png)
 
 ### About LM35 sensor
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146959998-c3ae6922-4aaa-4bab-96c3-4f4a5afe4cb9.png)
+
 LM35 is a common and easy-to-use temperature sensor.LM35 is a widely used temperature sensor with many different package types. At room temperature, it can achieve the accuracy of ±1/4°C without additional calibration processing.LM35 temperature sensor can produce different voltage by different temperatureWhen temperature is 0 ℃, it outputs 0V; if increasing 1 ℃, the output voltage will increase 10 mv.
 
-![circuit diagram](https://user-images.githubusercontent.com/95163711/146959998-c3ae6922-4aaa-4bab-96c3-4f4a5afe4cb9.png)
 
 ### Program Code 💻
 ```ino
