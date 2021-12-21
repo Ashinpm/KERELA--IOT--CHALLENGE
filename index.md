@@ -628,6 +628,179 @@ Press Clr + Shift + M in Arduino Software or go to TOOLS then Click on SERIAL MO
 > We can see te room temprature on serial monitor
 
 
+# Experiment 10
+# IR Remote Control Using TSOP And Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno  Board
+* Infrared Remote Controller(You can use TV Remote or any other remote)
+* Infrared Receiver *1
+* LED *6
+* 220ΩResistor *6
+* Breadboard Wire *11
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146963454-fd8504f1-ae3c-4faf-9e4c-91eea5136560.png)
+
+### About LM35 sensor
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146963415-9df4cb29-ebae-4c08-8c3e-add595939c0f.png)
+
+
+What is an infrared receiver?
+
+The signal from the infrared remote controller is a series of binary pulse code. To avoid the other infrared signal interference during the wireless transmission, the signal is pre-modulated at a specific carrier frequency and then send out by an infrared emission diode. The infrared receiving device needs to filter out other waves and receive signals at that specific frequency and to modulate it back to binary pulse code, known as demodulation.
+
+Working Principle
+
+The built-in receiver converts the light signal it received from the sender into feeble electrical signal. The signal will be amplified by the IC amplifier. After automatic gain control, band-pass filtering, demodulation, wave shaping, it returns to the original code. The code is then input to the code identification circuit by the receiver's signal output pin.
+
+### Program Code 💻
+```ino
+#include <IRremote.h>
+int RECV_PIN = 11;
+int LED1 = 2;
+int LED2 = 3;
+int LED3 = 4;
+int LED4 = 5;
+int LED5 = 6;
+int LED6 = 7;
+long on1  = 0x00FF6897;
+long off1 = 0x00FF9867;
+long on2 = 0x00FFB04F;
+long off2 = 0x00FF30CF;
+long on3 = 0x00FF18E7;
+long off3 = 0x00FF7A85;
+long on4 = 0x00FF10EF;
+long off4 = 0x00FF38C7;
+long on5 = 0x00FF5AA5;
+long off5 = 0x00FF42BD;
+long on6 = 0x00FF4AB5;
+long off6 = 0x00FF52AD;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+// Dumps out the decode_results structure.
+// Call this after IRrecv::decode()
+// void * to work around compiler issue
+//void dump(void *v) {
+//  decode_results *results = (decode_results *)v
+void dump(decode_results *results) {
+  int count = results->rawlen;
+  if (results->decode_type == UNKNOWN) 
+    {
+     Serial.println("Could not decode message");
+    } 
+  else 
+   {
+    if (results->decode_type == NEC) 
+      {
+       Serial.print("Decoded NEC: ");
+      } 
+    else if (results->decode_type == SONY) 
+      {
+       Serial.print("Decoded SONY: ");
+      } 
+    else if (results->decode_type == RC5) 
+      {
+       Serial.print("Decoded RC5: ");
+      } 
+    else if (results->decode_type == RC6) 
+      {
+       Serial.print("Decoded RC6: ");
+      }
+     Serial.print(results->value, HEX);
+     Serial.print(" (");
+     Serial.print(results->bits, DEC);
+     Serial.println(" bits)");
+   }
+     Serial.print("Raw (");
+     Serial.print(count, DEC);
+     Serial.print("): ");
+ for (int i = 0; i < count; i++) 
+     {
+      if ((i % 2) == 1) {
+      Serial.print(results->rawbuf[i]*USECPERTICK, DEC);
+     } 
+    else  
+     {
+      Serial.print(-(int)results->rawbuf[i]*USECPERTICK, DEC);
+     }
+    Serial.print(" ");
+     }
+      Serial.println("");
+     }
+void setup()
+ {
+  pinMode(RECV_PIN, INPUT);   
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);  
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+   irrecv.enableIRIn(); // Start the receiver
+ }
+int on = 0;
+unsigned long last = millis();
+void loop() 
+{
+  if (irrecv.decode(&results)) 
+   {
+    // If it's been at least 1/4 second since the last
+    // IR received, toggle the relay
+    if (millis() - last > 250) 
+      {
+       on = !on;
+//       digitalWrite(8, on ? HIGH : LOW);
+       digitalWrite(13, on ? HIGH : LOW);
+       dump(&results);
+      }
+    if (results.value == on1 )
+       digitalWrite(LED1, HIGH);
+    if (results.value == off1 )
+       digitalWrite(LED1, LOW); 
+    if (results.value == on2 )
+       digitalWrite(LED2, HIGH);
+    if (results.value == off2 )
+       digitalWrite(LED2, LOW); 
+    if (results.value == on3 )
+       digitalWrite(LED3, HIGH);
+    if (results.value == off3 )
+       digitalWrite(LED3, LOW);
+    if (results.value == on4 )
+       digitalWrite(LED4, HIGH);
+    if (results.value == off4 )
+       digitalWrite(LED4, LOW); 
+    if (results.value == on5 )
+       digitalWrite(LED5, HIGH);
+    if (results.value == off5 )
+       digitalWrite(LED5, LOW); 
+    if (results.value == on6 )
+       digitalWrite(LED6, HIGH);
+    if (results.value == off6 )
+       digitalWrite(LED6, LOW);        
+    last = millis();      
+irrecv.resume(); // Receive the next value
+  }
+}
+
+```
+
+### Output 📝
+
+![output](https://user-images.githubusercontent.com/95163711/146963462-399d8e87-c257-4cfe-95ca-7416e103cb99.png)
+
+Watch This YouTube Video for More Clarification
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8E3ltjnbV0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 
 
 
