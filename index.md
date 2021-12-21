@@ -22,6 +22,8 @@
 
 
 ### What is ARDUINO 
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146955215-f7cddde3-1601-4d06-ac1d-51dbb45e1f62.png)
+
 Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices
 orgin - ITALY.
 For More
@@ -175,7 +177,6 @@ digitalWrite(redled, LOW);// turn off red LED
 ### Circuit Diagram 🧭
 
 
-
 ![circuit diagram](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
 
 
@@ -326,7 +327,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 ```
 
 ### Output 📝
-> interfaced buzzer with Arduino
+> interfaced buzzer with Arduino.
 
 
 # Experiment 6
@@ -345,7 +346,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146744513-1f2a5c9e-800d-41d5-863b-f07b9a1adaed.png)
 
 ### About RGB
-RGB can emit any colour by mixing the 3 basic colours RED GREEN and BLUE. actually it consist of 3 seperate leds for red blue and green packed together in a single case.connect the resistors to the R,G,B terminals respectively
+RGB can emit any colour by mixing the 3 basic colours RED GREEN and BLUE. actually it consist of 3 seperate leds for red blue and green packed together in a single case.connect the resistors to the R,G,B terminals respectively.
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146745799-fefb9ca2-05f0-4518-8fd7-a5ae4be4de90.png)
 
@@ -410,7 +411,7 @@ for(val=0; val<255; val++)
 ```
 
 ### Output 📝
-> interfaced RGB with Arduino
+> interfaced RGB with Arduino.
 
 
 # Experiment 7
@@ -475,8 +476,81 @@ delay(10);// wait for 0.01
 > interfaced LDR with Arduino.
 
 
+# Experiment 8
+# Flame Detector
+
+### Components Required  🗒️
+
+* Arduino Uno
+* Flame Sensor 
+* Buzzer
+* 10K Resistor 
+* Jumper Wire*6
+* USB cable
+
+### Circuit Diagram 🧭
 
 
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146955949-1d11f6c0-c47d-43f6-a2ef-cee03e060766.png)
+
+### About IR sensor
+We are using Infrared Receiver (IR )for detecting Flame.The emitter is an IR LED and the detector is an IR photodiode. The IR photodiode is sensitive to the IR light emitted by an IR LED. The photo-diode's resistance and output voltage change in proportion to the IR light received. This is the underlying working principle of the IR sensor.
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146955253-2e8d02b2-a2dc-4034-8f5d-8e9f0fb15708.png)
+
+
+
+### Program Code 💻
+```ino
+int flame=0;// select analog pin 0 for the sensor
+
+int Beep=9;// select digital pin 9 for the buzzer
+
+int val=0;// initialize variable
+
+ void setup() 
+ 
+{
+
+  pinMode(Beep,OUTPUT);// set LED pin as “output”
+  
+ pinMode(flame,INPUT);// set buzzer pin as “input”
+ 
+ Serial.begin(9600);// set baud rate at “9600”
+ 
+ } 
+ 
+void loop() 
+
+{ 
+
+  val=analogRead(flame);// read the analog value of the sensor 
+  
+  Serial.println(val);// output and display the analog value
+  
+  if(val>=600)// when the analog value is larger than 600, the buzzer will buzz
+  
+  {  
+  
+   digitalWrite(Beep,HIGH); 
+   
+   }else 
+   
+   {  
+   
+     digitalWrite(Beep,LOW); 
+     
+    }
+    
+   delay(500); 
+   
+}
+```
+
+### Output 📝
+![output](https://user-images.githubusercontent.com/95163711/146955957-e2c059d2-8ab9-42b2-aaf3-e9144ebccd13.png)
+
+> Flame detector will detect the presence of fire and triggers the buzzer.
 
 
 
