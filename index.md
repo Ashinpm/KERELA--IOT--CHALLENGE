@@ -864,6 +864,29 @@ Watch This YouTube Video for More Clarification
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t9DEAreCD3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+# Experiment 11
+# 7 Segment Display & Arduino
+
+### Components Required  🗒️
+
+* Arduino Uno
+* 1-digit LED Segment Display x 1
+* 220Ω Resistor x 8
+* Breadboard
+* Jumper Wires 
+
+### Circuit Diagram 🧭
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146967454-e944e5ac-52f1-4fb1-b252-b0cabdb57d9b.png)
+
+### About Potentiometer
+LED segment display is a semiconductor light-emitting device. Its basic unit is a light-emitting diode (LED). LED segment display can be divided into 7-segment display and 8-segment display according to the number of segments. 8-segment display has one more LED unit ( for decimal point display) than 7-segment one.
+
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146967433-b28ad98c-a40a-4515-8614-edaaba701412.png)
+![circuit diagram](https://user-images.githubusercontent.com/95163711/146967443-6110201c-320e-4c36-9df7-87a5c5c1022b.png)
+
+
+
 
 
 
