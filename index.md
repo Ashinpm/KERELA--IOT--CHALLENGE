@@ -477,6 +477,11 @@ delay(10);// wait for 0.01
 
 > interfaced LDR with Arduino.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xIha-fq0PT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 
 # Experiment 8
 # Flame Detector
@@ -615,7 +620,7 @@ delay(500);// wait for 0.5 second
 ![output](https://user-images.githubusercontent.com/95163711/146960047-ac269a42-a60c-4406-bd83-23e119526183.png)
 
 ### *NOTE* 
-Press Clr + Shift + M in Arduino Software or got to TOOLS then Click on SERIAL MONITOR to see the output.
+Press Clr + Shift + M in Arduino Software or go to TOOLS then Click on SERIAL MONITOR to see the output.
 
 > We can see te room temprature on serial monitor
 
