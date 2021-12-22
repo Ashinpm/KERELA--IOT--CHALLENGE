@@ -15,7 +15,7 @@
 # **KERALA-IOT-CHALLENGE-[2021-22]**
 .........................................................................................................................................................
 # INTRODUCTION
-### Foxlab Makerspace in association with GTech - Group of Technology Companies in Kerala is launching our prestigious program “Kerala IoT Challenge 2021”, with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation
+### Foxlab Makerspace in association with GTech - Group of Technology Companies in Kerala is launching our prestigious program “Kerala IoT Challenge 2021”, with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. Kerala IoT Challenge is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.
 
 
 ## LET'S BEGIN
@@ -24,7 +24,7 @@
 ## What is ARDUINO 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146955215-f7cddde3-1601-4d06-ac1d-51dbb45e1f62.png)
 
-Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices
+Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.
 orgin - ITALY.
 For More
 click [here](https://www.arduino.cc/en/Guide/Introduction)
@@ -77,10 +77,10 @@ delay(1000); // wait for a second
 ### Output 📝
 > the led will blink with delay of 1 second  
 
-congragulation on your first project 😺
+congragulation on your first project 😺.
 
 ### Things to note
-make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂 Watch This YouTube Video for More Clarification
+make sure code is uploaded without any error to the board.if any error encountred please google the errorcode 🙂 Watch This YouTube Video for More Clarification.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -288,7 +288,7 @@ else
 ### Output 📝
 > LED was Controlled by the switch. 
 
-Watch This YouTube Video for More Clarification
+Watch This YouTube Video for More Clarification.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqesLSTzf6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -478,7 +478,7 @@ delay(10);// wait for 0.01
 
 > interfaced LDR with Arduino.
 
-Watch This YouTube Video for More Clarification
+Watch This YouTube Video for More Clarification.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xIha-fq0PT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -625,7 +625,7 @@ delay(500);// wait for 0.5 second
 ### *NOTE* 
 Press Clr + Shift + M in Arduino Software or go to TOOLS then Click on SERIAL MONITOR to see the output.
 
-> We can see te room temprature on serial monitor
+> We can see te room temprature on serial monitor.
 
 
 # Experiment 10
@@ -815,7 +815,7 @@ Watch This YouTube Video for More Clarification
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146965618-427ccc13-f13c-4249-8faf-bae2905f0967.png)
 
 ### About Potentiometer
-Potentiometer = Variable Resistor. A potentiometer is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment
+Potentiometer = Variable Resistor. A potentiometer is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment.
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146965609-510eac8a-b0df-4893-a8b9-5ce89abdb7f1.png)
 
@@ -859,7 +859,7 @@ Serial.println(val);// display val’s value
 
 ![output](https://user-images.githubusercontent.com/95163711/146965628-ef8d5c4c-e5e9-4efa-bcba-6651438c78d0.png)
 
-Watch This YouTube Video for More Clarification
+Watch This YouTube Video for More Clarification.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t9DEAreCD3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
