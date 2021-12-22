@@ -29,9 +29,28 @@ orgin - ITALY.
 For More
 click [here](https://www.arduino.cc/en/Guide/Introduction)
 
+# Table of Contents
+1. [Level 1](#level1)  
+    1. [Hello World LED Blinking](#exp1)  
+    2. [Traffic Light](#exp2)  
+    3. [LED Chasing Effect](#exp3)
+    4. [Button Controlled LED](#exp4)
+    5. [Buzzer And Arduino](#exp5)
+    6. [RGB LED & Arduino](#exp6)
+    7. [LDR Light Sensor & Arduino](#exp7)
+    8. [Flame Detector](#exp8)
+    9. [Thermometer](#exp9)
+    10. [IR Remote Control Using TSOP And Arduino](#exp10)
+    11. [Potentiometer analog Value Reading Using Arduino](#exp11)
+    12. [7 Segment Display & Arduino](#exp12)
+ 
+
+<a name="level1"></a>
+# **LEVEL 1**
+<a name="exp1"></a>
 
 # Experiment 1 
-# LED Blinking
+# Hello World LED Blinking
 
 
 ### Components Required  🗒️
@@ -84,7 +103,7 @@ make sure code is uploaded without any error to the board.if any error encountre
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPPoetX0uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+<a name="exp2"></a>
 # Experiment 2
 # Traffic Light
 
@@ -161,7 +180,7 @@ digitalWrite(redled, LOW);// turn off red LED
 > In Traffic light, the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. 
 
 
-
+<a name="exp3"></a>
 # Experiment 3
 # LED Chasing Effect 
 
@@ -232,7 +251,7 @@ void loop()
 ### Output 📝
 > The LEDs starts turning ON from one end in a sequential manner & after all the LEDs are turned ON, they starts to turn OFF the same way.
 
-
+<a name="exp4"></a>
 # Experiment 4
 # Button Controlled LED
 
@@ -291,7 +310,7 @@ else
 Watch This YouTube Video for More Clarification.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yqesLSTzf6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+<a name="exp5"></a>
 # Experiment 5
 # Buzzer & Arduino
 
@@ -332,7 +351,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 ### Output 📝
 > interfaced buzzer with Arduino.
 
-
+<a name="exp6"></a>
 # Experiment 6
 # RGB LED & Arduino
 
@@ -416,7 +435,7 @@ for(val=0; val<255; val++)
 ### Output 📝
 > interfaced RGB with Arduino.
 
-
+<a name="exp7"></a>
 # Experiment 7
 # LDR Light Sensor & Arduino
 
@@ -483,9 +502,7 @@ Watch This YouTube Video for More Clarification.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xIha-fq0PT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-
-
+<a name="exp8"></a>
 # Experiment 8
 # Flame Detector
 
@@ -562,6 +579,7 @@ void loop()
 
 > Flame detector will detect the presence of fire and triggers the buzzer.
 
+<a name="exp9"></a>
 # Experiment 9
 # Thermometer 
 
@@ -627,7 +645,7 @@ Press Clr + Shift + M in Arduino Software or go to TOOLS then Click on SERIAL MO
 
 > We can see te room temprature on serial monitor.
 
-
+<a name="exp10"></a>
 # Experiment 10
 # IR Remote Control Using TSOP And Arduino
 
@@ -799,7 +817,7 @@ Watch This YouTube Video for More Clarification
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8E3ltjnbV0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
+<a name="exp11"></a>
 # Experiment 11
 # Potentiometer analog Value Reading Using Arduino
 
@@ -863,8 +881,8 @@ Watch This YouTube Video for More Clarification.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t9DEAreCD3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-# Experiment 11
+<a name="exp12"></a>
+# Experiment 12
 # 7 Segment Display & Arduino
 
 ### Components Required  🗒️
@@ -879,7 +897,7 @@ Watch This YouTube Video for More Clarification.
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146967454-e944e5ac-52f1-4fb1-b252-b0cabdb57d9b.png)
 
-### About Potentiometer
+### About 7 Segment Display
 LED segment display is a semiconductor light-emitting device. Its basic unit is a light-emitting diode (LED). LED segment display can be divided into 7-segment display and 8-segment display according to the number of segments. 8-segment display has one more LED unit ( for decimal point display) than 7-segment one.
 
 ![circuit diagram](https://user-images.githubusercontent.com/95163711/146967433-b28ad98c-a40a-4515-8614-edaaba701412.png)
